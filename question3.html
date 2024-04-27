@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assigmnt 2</title>
+</head>
+
+<body>
+    <h2>Question 3</h2>
+    <script>
+        function add() {
+            var Eng, Math, Comp, sum, Percentage;
+            Eng = parseInt(document.getElementById("sub1").value);
+            Math = parseInt(document.getElementById("sub2").value);
+            Comp = parseInt(document.getElementById("sub3").value);
+            sum = Eng + Math + Comp;
+            Percentage = (sum / 300) * 100;
+
+
+
+            if (Percentage >= 80) {
+                document.write("Grade: A-one.\n Excellent")
+
+
+            }
+            else if (Percentage >= 70) {
+                document.write("Grade: A.\n Good")
+
+
+            }
+            else if (Percentage >= 60) {
+                document.write("Grade: B. \n You need to improve")
+
+            }
+            else if (Percentage < 60) {
+                document.write("Fail \n Sorry")
+
+            }
+        }
+    </script>
+    </head>
+
+    <body>
+        <p>Enter marks of Eng: <input id="sub1"></p>
+        <p>Enter marks of Math: <input id="sub2"></p>
+        <p>Enter marks of Comp: <input id="sub3"></p>
+        <button onclick="add()">See Grade</button>
+
+
+
+    </body>
+
+</html>

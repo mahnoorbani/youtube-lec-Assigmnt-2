@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assigmnt 2</title>
+</head>
+<h2>Question 2</h2>
+<script>
+    function add() {
+        var t;
+        t = parseInt(document.getElementById("sub1").value);
+        if (t <= 1200) {
+            document.write("Good Morning")
+        }
+        else if (t >= 1200 && t < 1700) {
+            document.write("Good afterNoon");
+        }
+        else if (t >= 1700 && t < 2100) {
+            document.write("Good Evening")
+        }
+        else if (t >= 2100 && t <= 2359) {
+            document.write("Good night")
+        }
+    }
+</script>
+</head>
+
+<body>
+    <p>Enter time <input id="sub1"></p>
+    <button onclick="add()">See time range</button>
+</body>
+
+</html>

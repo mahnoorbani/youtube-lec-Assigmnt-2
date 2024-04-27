@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assigmnt 2</title>
+</head>
+
+<body>
+    <h2>Question 6</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+    
+
+
+var operator = prompt('Enter operator: ');
+
+
+var number1 = Number(prompt('Enter first number: '));
+var number2 = Number(prompt('Enter second number: '));
+
+var result;
+
+if (operator == '+') {
+    result = number1 + number2;
+}
+else if (operator == '-') {
+    result = number1 - number2;
+}
+else if (operator == '*') {
+    result = number1 * number2;
+}
+else {
+    result = number1 / number2;
+}
+
+
+document.getElementById("demo1").innerHTML=(`${number1} ${operator} ${number2} = ${result}`);
+    </script>
+</body>
+
+</html>

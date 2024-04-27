@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assigmnt 2</title>
+</head>
+
+<body>
+    <h2>Question 4</h2>
+    <script>
+        function guessNumber() {
+
+
+            var random = 5;
+            var number = parseInt(prompt('Guess a number from 1 to 10: '));
+            if (number !== random) {
+                number = parseInt(prompt('Guess a number from 1 to 10: '));
+            }
+            if (number == random) {
+                document.write('Bingo! answer is correct.');
+            }
+
+        }
+        guessNumber();
+    </script>
+</body>
+
+</html>
